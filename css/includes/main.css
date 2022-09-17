@@ -14,6 +14,9 @@
 
 .main-header .btn-new-task {
     background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
 }
 
 .main-header .btn-new-task:hover {
@@ -21,11 +24,51 @@
 }
 
 .main-header .total-tasks {
+    background-color: #e1e1e1;
+    padding: 6px 8px;
+    border-radius: 38px;
+    color: var(--black);
+}
+
+.main-header #count-tasks {
+    font-weight: 600;
+    background-color: var(--white);
+    padding: 1px 6px;
+    border-radius: 14px;
+    color: var(--purple);
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-spacing: 0 0.5rem;
+}
+
+table thead th {
+    background-color: var(--white);
+    color: var(--black);
+    opacity: .9;
+    padding: 1em;
+    font: .9em;
+}
+
+table tbody tr:first-child {
+    margin-top: 24px;
+}
+
+table tbody td {
+    background-color: var(--white);
     color: var(--gray);
-    font-size: .9rem;
+    padding: 1.2em;
     font-weight: 600;
 }
 
-.main-header .count-tasks {
-    font-weight: 700;
+#loading-message {
+    text-align: center;
+    color: var(--gray);
+    margin-top: 2em;
+}
+
+.fa-plus {
+    margin-right: var(--gutter);
 }
