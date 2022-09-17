@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: 3em auto 6em auto;
+    flex: 1;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.main-header .btn-new-task {
+    background-color: var(--purple);
+}
+
+.main-header .btn-new-task:hover {
+    background-color: var(--purple-dark);
+}
+
+.main-header .total-tasks {
+    color: var(--gray);
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.main-header .count-tasks {
+    font-weight: 700;
+}

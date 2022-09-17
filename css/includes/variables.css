@@ -1,0 +1,15 @@
+:root {
+    --white: #fff;
+    --red: #DE3F4E;
+    --purple: #5f4bb5;
+    --purple-dark: #332378;
+    --purple-light: #A8C0FF;
+    --gray-light: #f1f1f1;
+    --gray-dark: #555;
+
+    --gutter: 8px;
+    --border-radius: 4px;
+    --font-family: 'Montserrat', sans-serif;
+
+    --gradient-purple: linear-gradient(90deg, var(--purple) 0%, var(--purple-light) 100%);
+}
