@@ -24,7 +24,7 @@
 
     <main class="container">
         <header class="main-header">
-            <button class="btn-new-task"><i class="fa-solid fa-plus"></i> Nova tarefa</button>
+            <button class="btn-new-task" onclick="toggleModal()"><i class="fa-solid fa-plus"></i> Nova tarefa</button>
             <span class="total-tasks">
                 <span id="count-tasks">0</span> Tarefas registradas
             </span>
@@ -71,9 +71,10 @@
                 </form>
 
                 <div class="buttons-modal">
-                    <button class="btn-cancel" type="button" onclick=""><i class="fa-solid fa-xmark"></i>
+                    <button class="btn-cancel" type="button" onclick="toggleModal()"><i class="fa-solid fa-xmark"></i>
                         Cancelar</button>
-                    <button class="btn-save" type="button"><i class="fa-solid fa-floppy-disk"></i>Salvar</button>
+                    <button class="btn-save" type="button" id="btn-create-task"><i
+                            class="fa-solid fa-floppy-disk"></i>Salvar</button>
                 </div>
 
             </article>
@@ -83,6 +84,12 @@
     <footer>
         <p>GoTasks 2022</p>
     </footer>
+
+    <!-- JS -->
+    <script src="./js/storage.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
