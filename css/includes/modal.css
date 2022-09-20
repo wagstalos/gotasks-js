@@ -17,7 +17,7 @@
 .modal-container {
     width: 100%;
     max-width: 40vw;
-    height: 45vh;
+    /* height: 45vh; */
     background-color: var(--white);
     border-radius: 1.2em;
     padding: 2em;
@@ -29,6 +29,7 @@
 
 .modal-container .title {
     color: var(--black);
+    margin-bottom: 24px;
 }
 
 /* FORM ====================== */
@@ -64,7 +65,7 @@
 
 /* BUTTONS ============================= */
 .buttons-modal {
-    /* align-self: flex-end; */
+    margin-top: 16px;
     display: flex;
     justify-content: end;
 }
