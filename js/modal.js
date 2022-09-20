@@ -3,28 +3,29 @@ const inputDescription = document.getElementById("description");
 const inputDate = document.getElementById("date");
 const btnCreateTask = document.getElementById("btn-create-task");
 
-function createTrask(e){
-    e.preventDefault();
-    
-    if(!inputDescription.value || !inputDate.value){
-        alert('Preencha todos os campos!');
-        return;
-    }
+function createTask(e) {
+  e.preventDefault();
 
-    const newTask = {
-        description : inputDescription.value,
-        date: new Date(inputDate.value).toLocaleDateString('pt-BR', {timeZone: 'UTC'}),
-        id: Math.floor(Math.random() * 10000)
-    }
+  if (!inputDescription.value || !inputDate.value) {
+    alert("Preencha todos os campos!");
+    return;
+  }
 
-    const allTasks = loadTasks();
+  const newTask = {
+    description: inputDescription.value,
+    date: new Date(inputDate.value).toLocaleDateString("pt-BR", {
+      timeZone: "UTC",
+    }),
+    id: Math.floor(Math.random() * 10000),
+  };
 
-    console.log('ALL TASKS: ', allTasks);
+  const allTasks = getTasks();
 
-    localStorage.setItem('@GoTasks', JSON.stringify([ ...allTasks, newTask ]));
+  setTasks([...allTasks, newTask]);
 
-    toggleModal();
-    clearFields();
+  reload();
+  toggleModal();
+  clearFields();
 }
 
 function toggleModal() {
@@ -36,4 +37,4 @@ function clearFields() {
   inputDescription.value = "";
 }
 
-btnCreateTask.addEventListener('click', createTrask);
+btnCreateTask.addEventListener("click", createTask);

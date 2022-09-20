@@ -64,7 +64,18 @@
 
 /* BUTTONS ============================= */
 .buttons-modal {
-    align-self: flex-end;
+    /* align-self: flex-end; */
+    display: flex;
+    justify-content: end;
+}
+
+.buttons-modal button {
+    display: flex;
+    align-items: center;
+}
+
+.buttons-modal i {
+    margin-right: var(--gutter);
 }
 
 .buttons-modal .btn-cancel {
@@ -86,6 +97,17 @@
     background-color: var(--purple-dark);
 }
 
-.modal-background.modal-visible{
+.modal-background.modal-visible {
     display: flex;
+}
+
+@media(max-width: 600px) {
+    .modal-container {
+        max-width: 90vw;
+    }
+
+    table {
+        width: 90%;
+        margin: 0 auto;
+    }
 }

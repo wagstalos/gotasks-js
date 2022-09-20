@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/b2cc96b263.js" crossorigin="anonymous" defer></script>
 </head>
 
-<body>
+<body onload="fillTable()">
     <header class="header">
         <i class="fa-solid fa-list-check"></i>
         <h1><a href=""></a>GoTasks</h1>
@@ -26,7 +26,7 @@
         <header class="main-header">
             <button class="btn-new-task" onclick="toggleModal()"><i class="fa-solid fa-plus"></i> Nova tarefa</button>
             <span class="total-tasks">
-                <span id="count-tasks">0</span> Tarefas registradas
+                <span id="count-tasks">0</span> Tarefas
             </span>
         </header>
 
@@ -38,8 +38,8 @@
                     <th>Ações</th>
                 </tr>
             </thead>
-            <tbody id="table">
-                <tr>
+            <tbody id="table-body">
+                <!-- <tr>
                     <td>To Study JS</td>
                     <td>16/09/2022</td>
                     <td>
@@ -47,7 +47,7 @@
                             <i class="fa-solid fa-trash"></i>
                         </a>
                     </td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
 
