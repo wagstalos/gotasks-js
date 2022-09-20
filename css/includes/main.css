@@ -72,3 +72,9 @@ table tbody td {
 .fa-plus {
     margin-right: var(--gutter);
 }
+
+@media(max-width: 600px) {
+    .container {
+        margin: 0;
+    }
+}

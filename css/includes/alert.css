@@ -22,10 +22,38 @@
     color: var(--white);
 }
 
+.round-time-bar div {
+    position: absolute;
+    height: 5px;
+    background: var(--white);
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+}
+
+.round-time-bar[data-style="smooth"] div {
+    animation: roundtime calc(var(--duration) * 1s) linear forwards;
+}
+
+@keyframes roundtime {
+    to {
+        /* More performant than animating `width` */
+        transform: scaleX(0);
+    }
+}
+
+.round-time-bar div {
+    /* ... */
+    animation: roundtime calc(var(--duration) * 1s) steps(var(--duration)) forwards;
+    transform-origin: left center;
+}
+
 @media(max-width: 600px) {
-    .alert-container{
+    .alert-container {
         right: 0;
         bottom: 0;
         text-align: center;
+        max-width: none;
     }
 }
