@@ -21,3 +21,11 @@
 .alert-title, .alert-message {
     color: var(--white);
 }
+
+@media(max-width: 600px) {
+    .alert-container{
+        right: 0;
+        bottom: 0;
+        text-align: center;
+    }
+}
