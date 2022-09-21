@@ -44,7 +44,7 @@
 }
 
 .modal-container form .form-group:first-child {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .modal-container form .form-group label {
@@ -65,7 +65,7 @@
 
 /* BUTTONS ============================= */
 .buttons-modal {
-    margin-top: 16px;
+    margin-top: 32px;
     display: flex;
     justify-content: end;
 }
