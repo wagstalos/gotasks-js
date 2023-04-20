@@ -6,6 +6,8 @@
   <!-- <a href="https://gotasks.netlify.app">Demo</a> -->
 </div>
 
+Your site is live at https://wagstalos.github.io/gotasks-js/
+
 <h1 align="center">Gotasks</h1>
 
 <p align="center">
